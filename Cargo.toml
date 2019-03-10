@@ -1,0 +1,18 @@
+[package]
+name = "playlist-exporter"
+version = "0.1.0"
+authors = ["Matt Chun-Lum <matt@questionable.engineering>"]
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "playlist-exporter"
+
+[profile.release]
+lto = true
+
+[dependencies]
+clap = "*"
+colored = "*"
+m3u = "*"
+rand = "*"
